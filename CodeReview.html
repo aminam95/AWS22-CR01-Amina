@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Review</title>
+    <style>
+      header {
+        background-image: url(file:keyboard.jpg);
+        background-position-x:100% ;
+        background-position-y:100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        padding-top: 10px;
+      }
+      article {
+        height: 420px;
+        background-color: rgb(53, 49, 49);
+      }
+      footer {
+        height: 200px;
+        background-color: black;
+        text-align: center;
+        padding:20px;
+      }
+      footer img {
+        width: 9%;
+        height: 30%;
+      }
+      footer span {
+        font-style: italic;
+        font-size: 14px;
+      }
+      .cover{
+        height: 80%;
+        display: flex;
+        align-items: flex-end;
+      }
+      .cover-space {
+        min-width: 20%;
+      }
+      .cover-text {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 43px;
+      }
+      .cover-text img {
+        width: 6%;
+        height: 16%;
+      }
+      .cover-text h3 {
+        font-size: 34px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .cover-text p {
+        font-weight: 600;
+      }      
+      .content-header {
+        text-align: center;
+      }
+      .content-header h1 {
+        font-size: 48pt;
+        text-shadow: 4px 4px #979696;
+      }
+      .content-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .card {
+        width: 300px;
+        height: 200px;
+        background-color: rgb(60, 108, 179);
+        border-radius: 12px;
+        text-align: center;
+      }
+      .card hr {
+        margin-left: 30px;
+        margin-right: 30px;
+        border-top: #979696;
+      }
+      .card button {
+        height: 30px;
+      }
+      .card .projects {
+        min-height: 80px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu {
+        height: 20%;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+      }
+      .logo {
+        width: 20%;
+        margin-left: 20px;
+      }
+      .logo img {
+        width: 50%;
+        height: 50%;
+      }
+      .searchbox{
+        width: 60%;
+      }
+      .searchbox input {
+        width: 100%;
+        height: 30px;
+      }
+      .actions {
+        width: 20%;
+      }
+      .actions button {
+        border-radius: 12px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: darkred;
+        border: none;
+        color: white;
+        margin-left: 20px;
+      }
+      body {
+        margin: 0px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="logo">
+          <img src="CFLOGO.png">
+        </div>
+        <div class="searchbox">
+          <input type="text">
+        </div>
+        <div class="actions">
+          <button>LogIn</button>
+          <button>SignUp</button>
+        </div>
+      </div>
+      <div class="cover">
+        <div class="cover-space"></div>
+        <div class="cover-text">
+          <h3>Code Factory FSWD</h3>
+          <p>This course is specially designed to introduce you to the WebDev world.</p>
+          <img src="devices.png">
+        </div>
+      </div>
+    </header>
+    <article>
+      <div class="content-header">
+        <h1>Course Technologies</h1>
+      </div>
+      <div class="content-cards">
+        <div class="card">
+          <h2>Fronte End</h2>
+          <hr>
+          <div class="projects">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>Angular</li>
+            </ul>
+          </div>
+          <button>Click to see more</button>
+        </div>
+        <div class="card">
+          <h2>Back End</h2>
+          <hr>
+          <div class="projects">
+            <ul>
+              <li>MySql</li>
+              <li>PHP</li>
+              <li>Symfony</li>
+            </ul>
+          </div>
+          <button>Click to see more</button>
+        </div>
+        <div class="card">
+          <h2>Projects</h2>
+          <hr>
+          <div class="projects">
+            <ul>
+              <li>Front End Project</li>
+              <li>Full Stack Project</li>
+            </ul>
+          </div>
+          <button>Click to see more</button>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <img src="CFLOGO.png">
+      <p>Amina Brakmic - CodeFactory &copy;</p>
+      <span>All rights reserved</span>
+    </footer>
+  </body>
+</html>
